@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal"
+    android:id="@+id/module_name_layout"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+      android:id="@+id/textView2"
+      android:layout_width="50dp"
+      android:layout_height="wrap_content"
+      android:text="Module Name"
+      android:layout_weight="1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.077"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.143" />
+    <Spinner
+      android:id="@+id/moduleNameSpinner"
+      android:layout_width="175dp"
+      android:layout_height="26dp"
+      android:text="Module Name"
+      android:layout_weight="1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.711"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.144" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/main_type_layout"
+    app:layout_constraintBottom_toBottomOf="@id/module_name_layout"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    >
+
+    <TextView
+      android:id="@+id/textView4"
+      android:layout_width="50dp"
+      android:layout_height="wrap_content"
+      android:text="Main Type"
+      android:layout_weight="1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.072"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.301" />
+    <Spinner
+      android:id="@+id/mainTypeSpinner"
+      android:layout_width="176dp"
+      android:layout_height="24dp"
+      android:text="Major Type"
+      android:layout_weight="1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.71"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.295" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/major_type_layout"
+    app:layout_constraintBottom_toBottomOf="@id/main_type_layout"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp">
+    <TextView
+      android:id="@+id/textView3"
+      android:layout_width="50dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:text="Major Type"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.073"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.217" />
+    <Spinner
+      android:id="@+id/majorTypeSpinner"
+      android:layout_width="176dp"
+      android:layout_height="26dp"
+      android:text="Main Type"
+      android:layout_weight="1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.714"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.219" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/emailAddressLayout"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp">
+    <TextView
+      android:id="@+id/textView13"
+      android:layout_width="50dp"
+      android:layout_height="wrap_content"
+      android:text="Email"
+      android:layout_weight="1" />
+
+    <EditText
+      android:id="@+id/editTextTextEmailAddress"
+      android:layout_width="176dp"
+      android:layout_height="wrap_content"
+      android:inputType="textEmailAddress"
+      android:layout_weight="1"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.714"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.069" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout"
+    android:orientation="vertical">
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"
+    android:gravity="center|bottom"
+    android:orientation="vertical" >
+  <Button
+    android:id="@+id/uploadButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Select File"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.859" />
+
+  <Button
+    android:id="@+id/uploadToServerButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Upload"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.929" />
+
+  </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+  <string name="app_name">My Application</string>
+
+  <string-array name="modules">
+    <item>Module 1</item>
+    <item>Module 2</item>
+  </string-array>
+  <string-array name="majors">
+    <item>Major Type 1</item>
+    <item>Major Type 2</item>
+  </string-array>
+  <string-array name="mains">
+    <item>Main Type 1</item>
+    <item>Main Type 2</item>
+  </string-array>
+</resources>
